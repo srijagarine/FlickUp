@@ -1,0 +1,9 @@
+services:
+  flickup:
+    container_name: flickup
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: /flickup
+    ports:
+      - "8080:8080"
